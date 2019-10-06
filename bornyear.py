@@ -1,9 +1,11 @@
 # МОДУЛЬ2
-attempt = 5
+
+attempt = 5  # кол-во попыток
 print(" У Вас будет ", attempt, "попыток")
 
 while attempt > 0:
     answer = input("Введите год рождения А.С. Пушкина:")
+
     if answer.isdigit():  # проверяем введена ли цифра
         # если цифра , то проверяем ответ
         danswer = int(answer)
@@ -19,4 +21,5 @@ while attempt > 0:
         # если не цифра, то предупреждаем
     else:
         print("Введите цифры!!!")
+
     print("(осталось ", attempt, " попыток)")
